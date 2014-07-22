@@ -1,0 +1,35 @@
+extends layout
+
+block content
+
+    .content.
+        <div>
+            <form action="/send-inquiry" method="post">
+                <div class="info">
+
+                    Office: <span>636-230-5296</span> <br>
+                    Cell: <span>314-541-2120</span> <br>
+                    Address: <span>PO Box 186, Eureka MO 63025 </span><br>
+                    Email: <span>pLawnEnforcement@gmail.com</span> <br>
+                    <span>(Email us below)</span>
+
+                </div>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" />
+                </div>
+                <div>
+                    <label for="mail">E-mail:</label>
+                    <input type="text" id="mail" />
+                </div>
+                <div>
+                    <label for="msg">Message:</label>
+                    <textarea name="msg" id="msg" cols="37" rows="10"></textarea>
+                </div>
+
+                <div class="button">
+                    <button type="submit">Send your message</button>
+                </div>
+            </form>
+        </div>
+    </div>
