@@ -1,0 +1,54 @@
+doctype html
+html
+        //- title Lawn Enforcement, Inc.
+        //- link(rel='stylesheet', href='/stylesheets/navbar.css')
+        //- link(rel='shortcut icon' ) 
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+        link(href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', href='/stylesheets/navbar.css')
+        if index
+            link(rel='stylesheet', href='/stylesheets/index.css')
+        if contact
+            link(rel='stylesheet', href='/stylesheets/contact.css')
+        if faq
+            link(rel='stylesheet', href='/stylesheets/faq.css')
+        if gallery
+            link(rel='stylesheet', href='/stylesheets/gallery.css')
+        if services
+            link(rel='stylesheet', href='/stylesheets/services.css')
+        link(rel='shortcut icon', type='image/png', href='/images/icons/favicon-logo.png')
+        title Lawn Enforcement, Inc.
+
+    body
+        header
+            .row-1
+                span.link
+                    a(href="services.html") Services
+                span.link
+                    a(href="contact.html") Contact
+                span.logo
+                    a(href="index.html")
+                        img(src="/images/icons/medium-logo.png", alt="Lawn Enforcement logo")
+                span.link
+                    a(href="gallery.html") &#160;&#160;Gallery
+                span.link
+                    a(href="faq.html") &#160;&#160;&#160;&#160;&#160;FAQ
+            .row-2
+                span.link
+                    a(href="services.html") Services
+                span.link
+                    a(href="contact.html") Contact
+                span.link
+                    a(href="gallery.html") Gallery
+                span.link
+                    a(href="faq.html") FAQ
+            .row-3
+                div
+                    em Call the Authorities on Landscaping
+                div
+                    | 636-230-5296
+
+
+        block content

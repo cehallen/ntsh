@@ -1,0 +1,88 @@
+.content-1 {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.content-1 a, content-2 a {
+    color: inherit;
+}
+
+a:hover {
+    color: #187E2B;
+}
+
+
+
+.left, .right {
+    margin: 2em;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: 300;   
+    font-size: 1.3em; 
+}
+
+ul {
+    list-style-type: circle;
+}
+
+@media screen and (max-width: 1150px) {
+    .left, .right {
+        width: 300px;
+        margin: 0 .75em;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+
+}
+
+
+.content-2 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content-2 div {
+    padding-top: 2em;
+}
+
+.content-2 h2 {
+    text-align: left;
+    border-bottom: 1px solid grey;
+
+}
+
+.content-2 h2 a {
+    float: right;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+
+.detailed p {
+    margin: 0 0 1em 1.5em;
+}
+
+.detailed p span {
+    font-style: italic;
+    /*text-decoration: underline;*/
+    font-weight: 300;
+}
+
+.content-1 ul {
+    font-size: 0.95em;
+}
+
+.content-1 ul ul {
+    font-size: 0.87em;
+    list-style-type: none;
+}
+
+.content-2 ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
