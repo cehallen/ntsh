@@ -1,10 +1,10 @@
 extends layout
 
 block content
-
+    
     .content.
         <div>
-            <form action="/send-inquiry" method="post">
+            <form action="/contact-send" method="post">
                 <div class="info">
 
                     Office: <span>636-230-5296</span> <br>
@@ -16,15 +16,19 @@ block content
                 </div>
                 <div>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" />
+                    <input type="text" id="name" name="message[name]" />
                 </div>
                 <div>
-                    <label for="mail">E-mail:</label>
-                    <input type="text" id="mail" />
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="message[email]" />
                 </div>
                 <div>
-                    <label for="msg">Message:</label>
-                    <textarea name="msg" id="msg" cols="37" rows="10"></textarea>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="message[subject]" />
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea name="message[message]" id="message" cols="37" rows="10"></textarea>
                 </div>
 
                 <div class="button">
