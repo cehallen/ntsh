@@ -3,6 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
+    padding-left: 20px;
 }
 
 form {
@@ -48,4 +49,8 @@ textarea {
     margin-left: 0 auto;
 }
 
-
+.alert {
+  text-align: center;
+  list-style-type: none;
+  color: red;
+}
