@@ -36,16 +36,16 @@ router.get('/contact', function(req, res) {
 function validate(message) {
   errors = [];
   if (!validator.isLength(message.name, 1, 100)) {
-    errors.push(" name must be 1 to 100 characters");
+    errors.push("Name must be 1 to 100 characters");
   }
   if (!validator.isLength(message.subject, 1, 100)) {
-    errors.push(" subject must be 1 to 100 characters");
+    errors.push("Subject must be 1 to 100 characters");
   }
   if (!validator.isLength(message.message, 1, 1000)) {
-    errors.push(" message must be 1 to 1000 characters");
+    errors.push("Message must be 1 to 1000 characters");
   }
   if (!validator.isEmail(message.email)) {
-    errors.push(" invalid email");
+    errors.push("Invalid email");
   }
   return errors;
 }
@@ -76,11 +76,12 @@ router.post('/contact', function(req, res) {
         locals.error = 'Error sending message';
         // locals.message = message;
       }
-      locals.notice = 'Your message has been sent';
+
       // console.log(json);
     });
     console.log(locals);
     console.log("The email was sent");
+    locals.notice = 'Your message has been sent';
     res.render('contact', { contact: true, result: locals, message: message } );
 
   } else {

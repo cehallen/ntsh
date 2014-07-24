@@ -1,17 +1,17 @@
--if (result !== 'undefined')
+-if (typeof result !== 'undefined')
 
-  //- -if (typeof result.notice !== 'undefined')
-  //-   .alert=result.notice
-  //- -if (typeof result.errors !== 'undefined')
-  //-   .alert
-  //-     ul
-  //-       -for (var i in result.errors)
-  //-         li=result.errors[i]
-
-
+  -if (typeof result.notice !== 'undefined')
+    .alert-head.alert=result.notice
+  -if (typeof result.errors !== 'undefined')
+    .alert
+      ul
+        -for (var i in result.errors)
+          li.alert=result.errors[i]
 
 
 
-  ul.alert
-    -for (var i in result)
-      li=result[i]
+
+
+  //- ul.alert
+  //-   -for (var i in result)
+  //-     li=result[i]
