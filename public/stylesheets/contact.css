@@ -6,6 +6,21 @@
     padding-left: 20px;
 }
 
+.wrapper {
+    width: 100%
+    max-width: 1000px;
+}
+
+.map {
+    display: inline-block;
+    width:66%;
+}
+
+.right-part {
+    display: inline-block;
+    width: 32%;
+}
+
 form {
     margin: 0 auto;
     width: 20em;

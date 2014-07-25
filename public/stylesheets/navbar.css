@@ -1,13 +1,18 @@
 body {
-    /*background-image: url("/images/subtle_dots.png");*/
-    background-repeat: repeat;
+    background-image: url("/images/bg-big.jpg");
+    background-repeat: repeat-x;
     font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    background-color: #cacaca;
 }
+
+
+
 /*logo color is #060F3D */
 header {
     text-align: center;
     font-size: 1.5em;
-    background-size: cover;
+    /*background-color: #F6FFF0;*/
 }
 
 header img {
@@ -30,8 +35,7 @@ header .row-1 {
 }
 
 header .row-1 span {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin: 0 1.5em;
     letter-spacing: .075em;
 }
 
@@ -39,10 +43,45 @@ header .row-3 div {
     letter-spacing: .025em;
     margin-left: 25px;
     font-weight: 300;
-    font-size: 0.9em
+    font-size: 0.9em;
 }
 
-@media screen and (max-width: 1150px) {
+.row-1 {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 2px 5px 5px #000;
+}
+
+@media screen and (max-width: 950px) {
+    header .row-1 span {
+        margin: 0 1em;
+    }
+    body {
+        background-image: url("/images/bg-small.jpg");
+        background-repeat: repeat-x;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .row-1 span {
+        margin: 0 0.5em;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    header .row-1 span {
+        /*margin: 0 0.3em;*/
+        font-size: 0.8em;
+        font-weight: 700;
+    }
+    header .row-3 {
+        font-size: 0.8em;
+    }
+}
+
+
+
+
+/*@media screen and (max-width: 1150px) {
     div.row-1 .link {
         display: none;
     }
@@ -58,6 +97,12 @@ header .row-3 div {
     }
 }
 
+@media screen and (max-width: 675px){
+    div.row-2 .link {
+        display: block;
+        padding: 0.15em;
+    }
+}*/
 
 
 div.row-2 {
@@ -72,18 +117,69 @@ div.row-2 .link {
     font-size: 0.9em;
 }
 
-@media screen and (max-width: 675px){
-    div.row-2 .link {
-        display: block;
-        padding: 0.15em;
+
+
+.row-4 {
+    max-width: 1000px;
+    /*text-align: center;*/
+    margin: 0 auto;
+}
+
+.row-3 {
+    padding: 1em;
+    color: rgba(255,255,255,0.8);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+
+}
+
+.images {
+    box-shadow: 3px 5px 15px #000;
+    /*min-width: 1024px;*/
+}
+
+
+/* CSS from http://responsiveslides.com/ */
+
+    .rslides {
+        position: relative;  /* this allows the li's inside to be absolutely positioned inside */
+        list-style: none;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
-}
 
-.title-line {
-    margin-top: 1em;
+    .rslides li {
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        display: none;
+        width: 100%;
+        left: 0;  /* basically top left position inside rslides container */
+        top: 0;
+    }
+
+    .rslides li:first-child {
+        position: relative;
+        display: block;
+        float: left;
+    }
+
+    .rslides img {
+        display: block;
+        height: auto;
+        float: left;
+        width: 100%;
+        border: 0;
+    }
+
+/* end */
+
+.footer {
+    margin-top: 100px;
     width: 100%;
-    height: 15px;
-    border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+    height: 120px;
+    background: -webkit-linear-gradient(180deg,#131414, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg,#131414, #000, ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg,#131414, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg,#131414, #000); /* Standard syntax */
 }
-

@@ -74,26 +74,16 @@ router.post('/contact', function(req, res) {
       if (err) {
         // return console.error(err);
         locals.error = 'Error sending message';
-        // locals.message = message;
       }
-
       // console.log(json);
     });
-    console.log(locals);
-    console.log("The email was sent");
     locals.notice = 'Your message has been sent';
     res.render('contact', { contact: true, result: locals, message: message } );
 
   } else {
-    // console.log(errors);
     locals.notice = 'Your message has errors:';
     locals.errors = errors;
-    // locals.message = message;
-    console.log("Your message has errors");
-    console.log(locals);
-    console.log(message);
     res.render('contact', { contact: true, result: locals, message: message } );
-    // { contact: true, result: locals, message: message }
   }
 
 });

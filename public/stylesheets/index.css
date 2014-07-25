@@ -1,10 +1,13 @@
 
 .content {
-    width: 65%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    margin-top: 3em;
+    max-width: 1000px;
 }
+
+
 
 .content .rslides {
     text-align: center;
@@ -12,41 +15,9 @@
     list-style-type: none;
 }
 
-/* CSS from http://responsiveslides.com/ */
 
-    .rslides {
-        position: relative;  /* this allows the li's inside to be absolutely positioned inside */
-        list-style: none;
-        overflow: hidden;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
 
-    .rslides li {
-        -webkit-backface-visibility: hidden;
-        position: absolute;
-        display: none;
-        width: 100%;
-        left: 0;  /* basically top left position inside rslides container */
-        top: 0;
-    }
 
-    .rslides li:first-child {
-        position: relative;
-        display: block;
-        float: left;
-    }
-
-    .rslides img {
-        display: block;
-        height: auto;
-        float: left;
-        width: 100%;
-        border: 0;
-    }
-
-/* end */
 
 .about {
     padding-top: 1em;
@@ -57,15 +28,10 @@
     text-align: left;
 }
 
-.about h2 a {
-    float: right;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 0.7em;
-}
+
 
 @media screen and (max-width: 750px){
     .content {
         width: 80%;
     }
-}    
+}

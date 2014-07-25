@@ -5,37 +5,41 @@ block content
     include message
 
     .content.
-        <div>
-            <form action="/contact" method="post">
-                <div class="info">
+        <div class="wrapper">
+            <div class="map">
+                <img src="./images/map.jpg" alt="map of stl area" />
+            </div>
+            <div class="right-part">
+                <form action="/contact" method="post">
+                    <div class="info">
 
-                    Office: <span>636-230-5296</span> <br>
-                    Cell: <span>314-541-2120</span> <br>
-                    Address: <span>PO Box 186, Eureka MO 63025 </span><br>
-                    Email: <span>pLawnEnforcement@gmail.com</span> <br>
-                    <span>(Email us below)</span>
+                        Office: <span>636-230-5296</span> <br>
+                        Cell: <span>314-541-2120</span> <br>
+                        Address: <span>PO Box 186, Eureka MO 63025 </span><br>
+                        Email: <span>pLawnEnforcement@gmail.com</span> <br>
+                        <span>(Email us below)</span>
 
-                </div>
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="message[name]" />
-                </div>
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="text" id="email" name="message[email]" />
-                </div>
-                <div>
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="message[subject]" />
-                </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea name="message[message]" id="message" cols="37" rows="10"></textarea>
-                </div>
+                    </div>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="message[name]" />
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" name="message[email]" />
+                    </div>
+                    <div>
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="message[subject]" />
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea name="message[message]" id="message" cols="37" rows="10"></textarea>
+                    </div>
 
-                <div class="button">
-                    <button type="submit">Send your message</button>
-                </div>
-            </form>
+                    <div class="button">
+                        <button type="submit">Send your message</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>

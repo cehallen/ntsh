@@ -6,6 +6,7 @@ html
     head
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+        meta(name="viewport", content="width=650")
         link(href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300', rel='stylesheet', type='text/css')
         link(rel='stylesheet', href='/stylesheets/navbar.css')
         if index
@@ -32,23 +33,39 @@ html
                     a(href="/")
                         img(src="/images/icons/medium-logo.png", alt="Lawn Enforcement logo")
                 span.link
-                    a(href="/gallery") &#160;&#160;Gallery
-                span.link
-                    a(href="/faq") &#160;&#160;&#160;&#160;&#160;FAQ
-            .row-2
-                span.link
-                    a(href="/services") Services
-                span.link
-                    a(href="/contact") Contact
-                span.link
                     a(href="/gallery") Gallery
                 span.link
-                    a(href="/faq") FAQ
+                    a(href="/faq") &#160;&#160;&#160;FAQ
+            //- .row-2
+            //-     span.link
+            //-         a(href="/services") Services
+            //-     span.link
+            //-         a(href="/contact") Contact
+            //-     span.link
+            //-         a(href="/gallery") Gallery
+            //-     span.link
+            //-         a(href="/faq") FAQ
+
             .row-3
-                div
-                    em Call the Authorities on Landscaping
-                div
-                    | 636-230-5296
+                | Call the Authorities on Landscaping
+                | &#160;&#160;636-230-5296
+            .row-4
+                .images
+
+                    ul.rslides
+                        li
+                            img(src="/images/work/Adem After 3-SLIDER.JPG", alt="")
+                        li
+                            img(src="/images/work/Ploesser After 3-SLIDER.JPG", alt="")
+                        li
+                            img(src="/images/work/Jundt Back After 2-SLIDER.jpg", alt="")
+                        li
+                            img(src="/images/work/Jundt Back After 7-SLIDER.jpg", alt="")
+                        li
+                            img(src="/images/work/Jundt Front After 3-SLIDER.jpg", alt="")
 
 
         block content
+
+        .footer
+            
