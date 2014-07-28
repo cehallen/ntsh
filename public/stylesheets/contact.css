@@ -1,32 +1,52 @@
 .content {
-    width: 85%;
+    max-width: 1000px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
-    padding-left: 20px;
+    text-align: center;
+    /*padding-left: 20px;*/
 }
 
 .wrapper {
-    width: 100%
-    max-width: 1000px;
+    /*width: 100%
+    max-width: 1000px;*/
+    position: relative;
 }
 
 .map {
-    display: inline-block;
-    width:66%;
+    /*display: inline-block;*/
+
+}
+
+.map img {
+    opacity: 0.3;
 }
 
 .right-part {
-    display: inline-block;
-    width: 32%;
+    position: absolute;
+    /*left: 33%;*/
+    /*left: 5%;*/
+    right: 5%;
+    top: 10%;
+    /*display: inline-block;*/
+    /*float: center;*/
+    /*width: 32%;*/
 }
+
+/*@media screen and (max-width: 800px) {
+    .right-part {
+        left: 20%;
+    }
+}*/
 
 form {
     margin: 0 auto;
     width: 20em;
     padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 0.5em;
+    /*border: 1px solid #CCC;
+    border-radius: 0.5em;*/
+    text-align: left;
 }
 
 form div + div {
@@ -35,6 +55,7 @@ form div + div {
 
 form .info span {
     float: right;
+    font-weight: 700;
 }
 
 label {

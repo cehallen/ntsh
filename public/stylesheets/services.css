@@ -83,9 +83,13 @@ ul {
     font-size: 0.7em;
 }
 
+.detailed {
+    font-size: 1.3em;
+}
 
 .detailed p {
     margin: 0 0 1em 1.5em;
+    line-height: 1.5em;
 }
 
 .detailed p span {
