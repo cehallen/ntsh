@@ -31,8 +31,6 @@ router.get('/contact', function(req, res) {
 });
 
 //added
-// console.log(validator.isEmail('kjsdf@sdf'));
-// console.log(validator.isLength('notso loong string', 0, 100));
 function validate(message) {
   errors = [];
   if (!validator.isLength(message.name, 1, 100)) {
@@ -59,8 +57,6 @@ router.post('/contact', function(req, res) {
   var message = req.body.message;
   var errors = validate(message);
   var locals = {};
-
-  // console.log(errors);
 
   if (errors.length === 0) {
     var email = new sendgrid.Email({

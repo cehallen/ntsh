@@ -5,9 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-// ADDED
-    // var sendgrid  = require('sendgrid')(SENDGRID_USERNAME, SENDGRID_PASSWORD)
-    // var SendGrid = require('sendgrid').SendGrid;
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
