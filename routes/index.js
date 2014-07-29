@@ -60,7 +60,7 @@ router.post('/contact', function(req, res) {
 
   if (errors.length === 0) {
     var email = new sendgrid.Email({
-      to: callen@thisisfusion.com,
+      to: "callen@thisisfusion.com",
       fromname: message.name,
       from: message.email,
       subject: message.subject,
