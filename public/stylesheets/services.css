@@ -32,7 +32,11 @@ a:hover {
 }
 
 .left ul, .right ul {
+    margin-top: .1em;
+}
 
+.left p, .right p {
+    margin-bottom: .1em;
 }
 
 .left a, .right a {
@@ -52,6 +56,10 @@ ul {
     .table-of-contents1 {
         display: none;
     }
+    .table-of-contents2 {
+        background-color: rgba(255, 255, 255, 0.95);
+        border: 1px solid grey;
+    }
     .left, .right {
         margin: 0 1em 0 1em;
     }
@@ -66,7 +74,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 875px) {
 
     .left, .right {
         font-size: 1.2em;
