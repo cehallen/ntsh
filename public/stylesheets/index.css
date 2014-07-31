@@ -8,6 +8,7 @@ body {
         background-image: url("/images/bg-small-blue.jpg");
         background-repeat: repeat-x;
     }
+
 }
 
 .row-3 {
@@ -97,8 +98,9 @@ body {
 
 
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 850px){
     .content {
-        width: 80%;
+        width: 95%;
     }
+
 }
