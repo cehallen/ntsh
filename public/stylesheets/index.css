@@ -1,10 +1,34 @@
+body {
+    background-image: url("/images/bg-big-blue.jpg");
+    background-repeat: repeat-x;
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        background-image: url("/images/bg-small-blue.jpg");
+        background-repeat: repeat-x;
+    }
+}
+
+.row-3 {
+    padding: 1em;
+    color: rgba(235,235,235,1);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+
+.row-4 {
+    max-width: 1000px;
+    /*text-align: center;*/
+    margin: 0 auto;
+}
 
 .content {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3em;
+    margin-top: .1em;
     max-width: 1000px;
+    line-height: 1.5em;
 }
 
 
@@ -15,6 +39,49 @@
     list-style-type: none;
 }
 
+
+.images {
+    box-shadow: 3px 5px 15px #000;
+    z-index: 10;
+    /*min-width: 1024px;*/
+}
+
+
+/* CSS from http://responsiveslides.com/ */
+
+    .rslides {
+        position: relative;  /* this allows the li's inside to be absolutely positioned inside */
+        list-style: none;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .rslides li {
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        display: none;
+        width: 100%;
+        left: 0;  /* basically top left position inside rslides container */
+        top: 0;
+    }
+
+    .rslides li:first-child {
+        position: relative;
+        display: block;
+        float: left;
+    }
+
+    .rslides img {
+        display: block;
+        height: auto;
+        float: left;
+        width: 100%;
+        border: 0;
+    }
+
+/* end */
 
 
 

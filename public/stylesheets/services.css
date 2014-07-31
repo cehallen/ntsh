@@ -1,5 +1,10 @@
+.table-of-contents1 {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid grey;
+}
+
 .content-1 {
-    max-width: 1024px;
+    max-width: 1000px;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -18,7 +23,7 @@ a:hover {
 
 
 .left, .right {
-    margin: 2em;
+    margin: .2em 2em;
     text-align: left;
     vertical-align: top;
     display: inline-block;
@@ -26,8 +31,21 @@ a:hover {
     font-size: 1.3em;
 }
 
+.left ul, .right ul {
+
+}
+
+.left a, .right a {
+    text-decoration: none;
+}
+
+.left a:hover, .right a:hover {
+    text-decoration: underline;
+}
+
 ul {
-    list-style-type: circle;
+    /*margin-top: 0; */
+    list-style-type: none;
 }
 
 @media screen and (max-width: 1150px) {
