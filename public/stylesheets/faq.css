@@ -1,0 +1,123 @@
+.table-of-contents1 {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid grey;
+}
+
+.content-1 {
+    max-width: 1000px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.content-1 a, content-2 a {
+    color: inherit;
+}
+
+a:hover {
+    color: #193FFF;
+}
+
+
+
+.left, .right {
+    margin: .6em 2em;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.left ul, .right ul {
+    margin-top: .1em;
+}
+
+.left p, .right p {
+    margin-bottom: .3em;
+    margin-top: .3em;
+}
+
+.left a, .right a {
+    text-decoration: none;
+}
+
+.left a:hover, .right a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    /*margin-top: 0; */
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1150px) {
+    .table-of-contents1 {
+
+    }
+
+    .left, .right {
+        margin: 0 1em 0 1em;
+    }
+
+}
+
+
+
+.content-2 {
+    max-width: 1000px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.content-2 div {
+    padding-top: .5em;
+}
+
+.content-2 h2 {
+    text-align: left;
+    border-bottom: 1px solid grey;
+
+}
+
+.content-2 h2 a {
+    float: right;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+.detailed {
+    font-size: 1.3em;
+}
+
+.detailed p {
+    margin: 0 0 1em 1.5em;
+    line-height: 1.5em;
+}
+
+.detailed p span {
+    font-style: italic;
+    /*text-decoration: underline;*/
+    font-weight: 300;
+}
+
+.content-1 ul {
+    font-size: 0.95em;
+}
+
+.content-1 ul ul {
+    font-size: 0.87em;
+    list-style-type: none;
+}
+
+.content-2 ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+
+.content-2 ul li {
+    margin-bottom: .4em;
+}
